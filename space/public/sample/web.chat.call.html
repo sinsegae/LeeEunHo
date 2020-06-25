@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <title>RTC Test Web(전화 걸기)</title>
+    <link rel="stylesheet" href="./css/wrap.css">
+    <script src='https://106.240.247.44:7101/socket.io/socket.io.js'></script>
+    <script src='./lib/common.js'></script>
+    <script src='./js/web.chat.call.js'></script>
+</head>
+
+<body>
+    <fieldset style="height: 130px; width: 100% ; margin: 0; padding: 1px;">
+    <legend style="margin : 0; padding : 0">정보 입력</legend>
+    <!-- <div style= "height: 100px; width: 250px; border:1px solid gold;" > -->
+    <div class='login'>
+        id : <input id='inputid' value='apple' /> <br />
+        pw : <input id='inputpw' type='password' value='apple' /> <br />
+        target : <input id='inputTarget' value='melon' /> <br />
+        <button id='loginBtn'>로그인</button>
+        <button id='callBtn'>전화걸기</button>
+        <button id='exitBtn'>통화종료</button>
+    </div>
+</fieldset>
+
+    <!-- <fieldset style="height: 70px; width: 800px ;  margin: 0; padding: 1px;">
+    <legend style="margin : 0; padding : 0">채팅 입력</legend> -->
+    
+    <div class='message' style="height: 120px;">
+        <div id='text_print_Box'></div>
+        <input type='text' id='message'>
+        <button id='chatBtn'>채팅송신</button><br />
+        
+        <div id='chat_Box'></div>
+    </div>
+    
+    
+    <!-- <legend style="margin : 0; padding : 0 align = center">Log </legend> -->
+    <div class='printBox' id='printBox'></div>
+
+</body>
+
+</html>

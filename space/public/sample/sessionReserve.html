@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+  <meta http-equiv='X-UA-Compatible' content='ie=edge' />
+  <title>RTC Test Web</title>
+  
+  <script src='https://106.240.247.44:7101/socket.io/socket.io.js'></script>
+  <script src='../lib/common.js'></script>
+  <script src='./js/sessionReserve.js'></script>
+</head>
+
+<body>
+  <div style="height:100%; width:100%; border : 1px solid black; margin-top: 10px; ">
+    <div>공유자원예약</div>
+      <div class='login'>
+        <input type='hidden' id='inputId' value='apple' /> <br />
+        <input type='hidden' id='inputPw' type='password' value='apple' />
+        <!-- <input type='hidden' id='inputTarget' value='orange' /> <br /> -->
+        <br />
+        <button id='loginBtn'>로그인</button>
+        <button id='callBtn' disabled>회의초대</button>
+        <button id='joinBtn' disabled>회의참여</button>
+        <button id='exitBtn' disabled>회의종료</button>
+        <button id='sessionBtn' disabled>자원 예약</button>
+      </div>
+  </div>
+
+  <div style="width:100%; height:50px; border : 1px solid black; margin-top: 20px; ">
+    <!-- <div id='messageDiv'></div> -->
+    <div id='text_print_Box'> </div>
+  </div>
+  <!-- <video id='multiVideo' autoplay style='object-fit: fill;'></video> -->
+  
+  <div style="overflow:scroll; width:100%; height:200px; border : 1px solid black; margin-top: 20px; ">
+    <div style="margin-block-end: 10px;">로그</div>
+    <div id='printBox'></div>
+  </div>
+</body>
+</html>

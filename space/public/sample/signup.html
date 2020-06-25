@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/wrap.css">
+    <script src='https://106.240.247.44:7101/socket.io/socket.io.js'></script>
+    <script src='../lib/common.js'></script>
+    <script src='./js/web.signup.js'></script>
+</head>
+
+<body>
+    <div style="height:100%; width:100%; border : 1px solid black; margin-top: 10px; ">
+        <div class='signup'>
+            id : <input id='inputId'> <br />
+            pw : <input id='inputPw' type='password'> <br />
+            name : <input id='inputName'> <br />
+            <button id='loginBtn'> 회원가입 </button>
+        </div>
+    </div>
+
+    <!-- 결과 메시지 -->
+    <div class='login_message'>
+        <div id='text_print_Box'></div>
+    </div>
+
+    <!-- 로그 -->
+  <div id='printBox' class='printBox'></div>
+
+</body>
+</html>

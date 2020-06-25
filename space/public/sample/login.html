@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+  <meta http-equiv='X-UA-Compatible' content='ie=edge' />
+  <title>RTC Test Web</title>
+  <link rel="stylesheet" href="./css/wrap.css">
+  <script src='https://106.240.247.44:7101/socket.io/socket.io.js'></script>
+  <script src="../lib/common.js"></script>
+  <script src="./js/login.js"></script>
+</head>
+
+<body>
+  <div class='login' style="padding: 15px; border: 0.5px solid black">
+    id :  <input id='inputId' value='apple' /> <br />
+    pw : <input id='inputPw' type='password' value='apple' /> </br>
+    <button id='loginBtn'>로그인</button>
+  </div>
+
+  <!-- 결과 메시지 -->
+  <div class='login_message'>
+    <div id='text_print_Box'></div>
+  </div>
+
+  <!-- 로그 -->
+  <div id='printBox' class='printBox'></div>
+</body>
+
+</html>
