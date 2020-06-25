@@ -50,6 +50,10 @@ document.addEventListener('DOMContentLoaded', function () {
       };
   
       try {
+        if(inputTarget.value == ''){
+          alert('target을 입력해주세요.');
+          return;
+        }
         tLogBox('send', callData);
         tTextbox('전화 연결중입니다.');
         signalSocketIo.emit('knowledgetalk', callData);

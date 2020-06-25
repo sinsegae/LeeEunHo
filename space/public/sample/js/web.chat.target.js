@@ -96,6 +96,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 throw err;
             }
         }
+            message.value = '';
     });
 
     signalSocketIo.on('knowledgetalk', function (data) {

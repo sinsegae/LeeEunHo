@@ -110,6 +110,10 @@ document.addEventListener('DOMContentLoaded', function () {
       };
       
       try {
+        if(inputTarget.value == ''){
+          alert('target을 입력해주세요.');
+          return;
+        }
         tLogBox('send', member);
         signalSocketIo.emit('knowledgetalk', member);
       } catch (err) {

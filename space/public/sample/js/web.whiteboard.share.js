@@ -182,6 +182,10 @@ document.addEventListener('DOMContentLoaded', function() {
       };
    
       try {
+        if(inputTarget.value == ''){
+          alert('target을 입력해주세요.');
+          return;
+        }
         console.log('send', callData);
         tLogBox('send', callData);
         signalSocketIo.emit('knowledgetalk', callData);
